@@ -3,7 +3,7 @@ import LazyImage from "./LazyImage";
 
 // Order per Figma: Gmail, LinkedIn, Behance, Medium
 const socialLinks = [
-  { src: assets.gmailLogo,    label: "Gmail",    href: "mailto:nandinee@example.com" },
+  { src: assets.gmailLogo,    label: "Gmail",    href: "mailto:nandinee0417@gmail.com" },
   { src: assets.linkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/nandinee-varshney/" },
   { src: assets.behanceLogo,  label: "Behance",  href: "https://www.behance.net/nandinevarshney" },
   { src: assets.mediumLogo,   label: "Medium",   href: "https://medium.com/@nandinee.varshney2000" },
@@ -58,6 +58,7 @@ export default function Footer() {
                 href={href}
                 aria-label={label}
                 className="border border-white/20 bg-black p-3.5 hover:border-white/50 hover:bg-white/5 transition-all duration-200"
+                target="_blank"
               >
                 <LazyImage src={src} alt={label} className="w-[22px] h-[22px] object-contain" />
               </a>
