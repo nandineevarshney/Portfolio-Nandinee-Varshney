@@ -46,6 +46,8 @@ export default function Footer() {
           <a
             href="mailto:nandinee0417@gmail.com"
             className="w-full border border-[#5634dd] bg-black px-4 py-3.5 md:py-2 text-white font-dm text-sm md:text-base uppercase tracking-normal md:tracking-widest hover:bg-[#5634dd]/10 transition-colors text-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Start a conversation
           </a>
