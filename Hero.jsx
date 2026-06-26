@@ -241,7 +241,9 @@ export default function Hero() {
                   ].map(({ src, label, href }) => (
                     <a key={label} href={href} aria-label={label}
                       className="border border-white/10 bg-black p-2 md:p-3 hover:border-white/50 transition-colors"
-                      target="_blank">
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
                       <LazyImage src={src} alt={label} className="w-[20px] h-[20px] md:w-[26px] md:h-[26px] object-contain" />
                     </a>
                   ))}

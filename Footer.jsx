@@ -59,6 +59,7 @@ export default function Footer() {
                 aria-label={label}
                 className="border border-white/20 bg-black p-3.5 hover:border-white/50 hover:bg-white/5 transition-all duration-200"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <LazyImage src={src} alt={label} className="w-[22px] h-[22px] object-contain" />
               </a>
