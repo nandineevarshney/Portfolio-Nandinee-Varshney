@@ -5,7 +5,7 @@ const navLinks = [
   { label: "Work",            href: "/work" },
   { label: "About",           href: "/about" },
   { label: "Creative corner", href: "/creative-corner" },
-  { label: "Resume",          href: "#", external: true },
+  { label: "Resume",          href: "https://drive.google.com/drive/folders/1DHbsNQfd6ftpikyBaC4JPM9M-kCpCFEx", external: true },
 ];
 
 export default function Navbar() {

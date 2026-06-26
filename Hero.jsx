@@ -249,7 +249,7 @@ export default function Hero() {
               <div className="w-px bg-white/30 shrink-0 self-stretch" aria-hidden />
               <div className="flex flex-col gap-3 md:gap-4 flex-1 min-w-0 pl-3 md:pl-10">
                 <span className="font-dm text-[10px] md:text-[12px] text-white/80 tracking-wider">Open to work</span>
-                <a href="#" className="block w-full border border-[#5634dd] bg-black px-4 md:px-6 py-[12px] md:py-[15px] lg:py-[18px] text-white font-dm text-[12px] md:text-[16px] lg:text-[18px] uppercase tracking-widest text-center hover:bg-[#5634dd]/10 transition-colors whitespace-nowrap">
+                <a href="https://drive.google.com/drive/folders/1DHbsNQfd6ftpikyBaC4JPM9M-kCpCFEx" className="block w-full border border-[#5634dd] bg-black px-4 md:px-6 py-[12px] md:py-[15px] lg:py-[18px] text-white font-dm text-[12px] md:text-[16px] lg:text-[18px] uppercase tracking-widest text-center hover:bg-[#5634dd]/10 transition-colors whitespace-nowrap">
                   VIEW RESUME
                 </a>
               </div>
