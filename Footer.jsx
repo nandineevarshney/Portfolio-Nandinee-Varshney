@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Right column — CTA button + icons share the same width (both edges aligned) */}
         <div className="flex flex-col items-stretch gap-8 md:gap-14 w-full md:w-auto md:min-w-[280px]">
           <a
-            href="mailto:nandinee@example.com"
+            href="mailto:nandinee0417@gmail.com"
             className="w-full border border-[#5634dd] bg-black px-4 py-3.5 md:py-2 text-white font-dm text-sm md:text-base uppercase tracking-normal md:tracking-widest hover:bg-[#5634dd]/10 transition-colors text-center"
           >
             Start a conversation
