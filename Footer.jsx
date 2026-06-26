@@ -4,9 +4,9 @@ import LazyImage from "./LazyImage";
 // Order per Figma: Gmail, LinkedIn, Behance, Medium
 const socialLinks = [
   { src: assets.gmailLogo,    label: "Gmail",    href: "mailto:nandinee@example.com" },
-  { src: assets.linkedinLogo, label: "LinkedIn", href: "#" },
-  { src: assets.behanceLogo,  label: "Behance",  href: "#" },
-  { src: assets.mediumLogo,   label: "Medium",   href: "#" },
+  { src: assets.linkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/nandinee-varshney/" },
+  { src: assets.behanceLogo,  label: "Behance",  href: "https://www.behance.net/nandinevarshney" },
+  { src: assets.mediumLogo,   label: "Medium",   href: "https://medium.com/@nandinee.varshney2000" },
 ];
 
 export default function Footer() {

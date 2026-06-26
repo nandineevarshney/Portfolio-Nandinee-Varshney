@@ -234,10 +234,10 @@ export default function Hero() {
                 <span className="font-dm text-[10px] md:text-[12px] text-white/80 tracking-wider">Connect</span>
                 <div className="flex gap-2 md:gap-4">
                   {[
-                    { src: assets.behanceLogo,  label: "Behance",  href: "#" },
-                    { src: assets.linkedinLogo, label: "LinkedIn", href: "#" },
-                    { src: assets.mediumLogo,   label: "Medium",   href: "#" },
                     { src: assets.gmailLogo,    label: "Gmail",    href: "mailto:nandinee@example.com" },
+                    { src: assets.linkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/nandinee-varshney/" },
+                    { src: assets.behanceLogo,  label: "Behance",  href: "https://www.behance.net/nandinevarshney" },
+                    { src: assets.mediumLogo,   label: "Medium",   href: "https://medium.com/@nandinee.varshney2000" },
                   ].map(({ src, label, href }) => (
                     <a key={label} href={href} aria-label={label}
                       className="border border-white/10 bg-black p-2 md:p-3 hover:border-white/50 transition-colors">
