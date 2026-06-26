@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-black text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .font-cabinet {
+    font-family: "Cabinet Grotesk", "Georgia", serif;
+  }
+  .principle-ghost-number {
+    font-weight: 200 !important;
+    font-variation-settings: "wght" 200 !important;
+  }
+  .font-dm {
+    font-family: "DM Sans", system-ui, sans-serif;
+  }
+  /* Hide scrollbar for gallery strip */
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* ── Navbar active-underline entrance ──────────────────────── */
+@keyframes navBarEnter {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.nav-bar-enter {
+  transform-origin: left center;
+  animation: navBarEnter 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Hero photo carousel — settles on each of 6 photos, loops seamlessly ── */
+@keyframes photoScrollY {
+  0%,      12.5%   { transform: translateY(0); }
+  16.666%, 29.166% { transform: translateY(-8.333%); }
+  33.333%, 45.833% { transform: translateY(-16.666%); }
+  50%,     62.5%   { transform: translateY(-25%); }
+  66.666%, 79.166% { transform: translateY(-33.333%); }
+  83.333%, 95.833% { transform: translateY(-41.666%); }
+  100%             { transform: translateY(-50%); }
+}
+.animate-photoScrollY {
+  animation: photoScrollY 30s cubic-bezier(0.7, 0, 0.3, 1) infinite;
+}
+
+/* ── Vinyl equalizer bar animation ─────────────────────────── */
+@keyframes eqBar {
+  0%, 100% { transform: scaleY(0.12); }
+  50%       { transform: scaleY(1); }
+}
+.eq-bar {
+  width: 3px;
+  height: 40px;
+  border-radius: 2px;
+  transform-origin: center;
+  animation: eqBar 0.9s ease-in-out infinite;
+}
+.eq-bar:nth-child(1)  { animation-duration: 0.85s; animation-delay: 0.00s; }
+.eq-bar:nth-child(2)  { animation-duration: 0.65s; animation-delay: 0.12s; }
+.eq-bar:nth-child(3)  { animation-duration: 1.10s; animation-delay: 0.05s; }
+.eq-bar:nth-child(4)  { animation-duration: 0.75s; animation-delay: 0.20s; }
+.eq-bar:nth-child(5)  { animation-duration: 0.55s; animation-delay: 0.30s; }
+.eq-bar:nth-child(6)  { animation-duration: 0.95s; animation-delay: 0.08s; }
+.eq-bar:nth-child(7)  { animation-duration: 0.70s; animation-delay: 0.18s; }
+.eq-bar:nth-child(8)  { animation-duration: 0.80s; animation-delay: 0.35s; }
+.eq-bar:nth-child(9)  { animation-duration: 1.00s; animation-delay: 0.10s; }
+.eq-bar:nth-child(10) { animation-duration: 0.60s; animation-delay: 0.25s; }
